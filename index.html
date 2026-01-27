@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>times pray in tunisia</title>
+    <link rel="stylesheet" href="timesPray.css">
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1 id="place">
+        place of times of pray
+    </h1>
+    <div class="timesHeader">
+        <h3 id="times">date of times of timesPray</h3>
+        <select  id="countries"></select>
+        <select  id="cities">
+        </select>
+    </div>
+    <div class="cardsPray" style="direction: rtl;">
+        <div class="card">
+            <header style="background: linear-gradient(-8deg,red,#3760af);">
+                <h2>الفجر</h2>
+            </header>
+            <div class="body">
+                <p id="Fajr">4:30</p>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+                <h2>الشروق</h2>
+            </header>
+            <div class="body">
+                <p id="Sunrise">4:30</p>
+            </div>
+        </div>
+        <div class="card">
+            <header style="background: linear-gradient(-8deg,rgba(255, 255, 0, 0.726), #55abf6)">
+                <h2>الظهر</h2>
+            </header>
+            <div class="body">
+                <p id="Dhuhr">4:30</p>
+            </div>
+        </div>
+        <div class="card">
+            <header style="background: linear-gradient(-8deg,yellow, #f7ca55)">
+                <h2>العصر</h2>
+            </header>
+            <div class="body">
+                <p id="Asr">4:30</p>
+            </div>
+        </div>
+        <div class="card">
+            <header style="background: linear-gradient(-8deg, red, rgba(130, 4, 130, 0.758))">
+                <h2>المغرب</h2>
+            </header>
+            <div class="body">
+                <p id="Maghrib">4:30</p>
+            </div>
+        </div>
+        <div class="card">
+            <header style="background: linear-gradient(-8deg,#3760af,rgba(130, 4, 130, 0.758));">
+                <h2>العشاء</h2>
+            </header>
+            <div class="body">
+                <p id="Isha">4:30</p>
+            </div>
+        </div>
+    </div>
+    <script src="timesPray.js"></script>
+</body>
+</html>
