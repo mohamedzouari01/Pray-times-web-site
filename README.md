@@ -6,3 +6,7 @@ A web application that displays daily prayer times (Fajr, Dhuhr, Asr, Maghrib, I
 - Uses public API
 
 ![Design du site](design/design.png)
+
+# Mon projet de site de prières
+
+Voici le **démo en ligne** : [Voir le site](https://mohamed-praytimes.netlify.app)
