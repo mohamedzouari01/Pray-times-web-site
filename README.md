@@ -4,4 +4,5 @@ A web application that displays daily prayer times (Fajr, Dhuhr, Asr, Maghrib, I
 - Daily prayer times
 - City selection
 - Uses public API
-![Design du site](design/Capture d'écran 2026-01-25 010548.png)
+
+![Design du site](design/design.png)
