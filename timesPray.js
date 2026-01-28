@@ -89,4 +89,15 @@ function hideLoader() {
     document.getElementById("loader").classList.add("hidden");
     document.querySelector(".cardsPray").style.display = "flex";
 }
+//digital clock
+function update_time(){
+    const date=new Date();
+    const hour= date.getHours().toString().padStart(2,0);
+    const minutes=date.getMinutes().toString().padStart(2,0);
+    const seconds=date.getSeconds().toString().padStart(2,0);
+    const string_time=`${hour}:${minutes}:${seconds}`;
+    console.log(string_time);
+    document.querySelector(".clock").textContent=string_time;
+}
+setInterval(update_time,1000);
 // Determine the current prayer time

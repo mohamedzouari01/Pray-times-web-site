@@ -3,11 +3,15 @@ body{
 
 }
 #place {
-    color: whitesmoke;
-    font-family: math;
+    font-size: 2.8rem;
+    font-family: "Segoe UI", math;
+    font-weight: 600;
     text-align: center;
-    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    flex: 1;
 }
+
 #times{
     color: whitesmoke;
     font-family: math;
@@ -89,6 +93,41 @@ body{
     transform: scale(1.05);
     box-shadow: 0 0 20px gold;
 }
+.clock {
+    font-size: 2.2rem;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding: 15px 30px;
+    min-width: 220px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.05));
+    border-radius: 18px;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+
 /* RESPONSIVE du la page*/
 /* =========================
     RESPONSIVE - TABLETTE
@@ -111,10 +150,17 @@ body{
     body {
         background-attachment: scroll;
     }
-
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .clock {
+        font-size: 1.6rem;
+        width: 80%;
+    }
     #place {
-        font-size: 2rem;
-        padding: 10px;
+        font-size: 1.8rem;
     }
 
     #times {
@@ -168,11 +214,13 @@ body{
     VERY SMALL DEVICES
 ========================= */
 @media (max-width: 400px) {
-
-    #place {
-        font-size: 1.6rem;
+    .clock {
+        font-size: 1.4rem;
+        min-width: auto;
     }
-
+    #place {
+        font-size: 1.5rem;
+    }
     .card .body {
         font-size: 34px;
     }
