@@ -68,3 +68,112 @@ body{
     font-size: 30px;
     color: white;
 }
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gold;
+}
+/* RESPONSIVE du la page*/
+/* =========================
+    RESPONSIVE - TABLETTE
+========================= */
+@media (max-width: 1024px) {
+    .card {
+        width: 28%;
+    }
+
+    .card .body {
+        font-size: 48px;
+    }
+}
+
+/* =========================
+    RESPONSIVE - MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    #place {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    #times {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    /* Header */
+    .timesHeader {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Selects */
+    #countries,
+    #cities {
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Cards container */
+    .cardsPray {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Single card */
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card header h2 {
+        font-size: 24px;
+    }
+
+    .card .body {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    /* Loader */
+    .loader {
+        margin-top: 30px;
+    }
+}
+
+/* =========================
+    VERY SMALL DEVICES
+========================= */
+@media (max-width: 400px) {
+
+    #place {
+        font-size: 1.6rem;
+    }
+
+    .card .body {
+        font-size: 34px;
+    }
+}
