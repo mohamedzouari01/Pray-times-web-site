@@ -96,7 +96,6 @@ function update_time(){
     const minutes=date.getMinutes().toString().padStart(2,0);
     const seconds=date.getSeconds().toString().padStart(2,0);
     const string_time=`${hour}:${minutes}:${seconds}`;
-    console.log(string_time);
     document.querySelector(".clock").textContent=string_time;
 }
 setInterval(update_time,1000);
